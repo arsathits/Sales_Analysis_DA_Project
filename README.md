@@ -1,75 +1,43 @@
-Sales Analytics Dashboard 
+Data Analyst Portfolio Project – Sales Analysis
 
-These dashboards help businesses monitor key performance metrics and gain actionable insights into their sales data. Below is an explanation of each dashboard and its functionality.
+Business Request & User Stories
 
- Dashboard 1: Sales Overview
+The primary business request for this project was to develop an executive sales report tailored for sales managers and representatives. Based on the requirements, specific user stories were defined to ensure the delivery met the business needs and acceptance criteria. These user stories guided the project execution and aligned the deliverables with user expectations.
 
- Purpose:
-To provide a high-level overview of sales performance against the budget and other key metrics.
+To fulfill the request:
+1.	Sales Managers needed a high-level dashboard overview of internet sales, enabling them to monitor customer and product performance effectively. This was achieved through a Power BI dashboard that updates daily with relevant KPIs and visualizations.
+2.	Sales Representatives required detailed views of sales by customers and products, allowing them to identify high-value customers and best-selling products. These dashboards include filtering options for deeper analysis of individual customers and products.
+3.	Additionally, Sales Managers wanted to track sales performance over time against budget. This requirement was met by incorporating graphs and KPIs that compare actual sales with budgeted targets, providing actionable insights for strategic planning.
+These dashboards were designed to be interactive, visually engaging, and updated daily to ensure data accuracy and relevance.
 
- Key Features:
-1. Sales vs Budget:
-   - Displays the total sales for the selected year ($16,351,550) compared to the budget ($15,300,000).
-   - Shows the variance ($1,051,550) and whether it is positive or negative.
+Data Cleansing & Transformation (SQL)
 
-2. Sales by Product Category:
-   - A donut chart showing the proportion of sales contributed by different product categories.
-   - For example, "Bikes" contribute 93.93% of total sales, while "Accessories" contribute 4.09%.
+To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.
+1. Dim_Date
+2. Dim_Customers
+3. Dim_Products
+4. Fact_InternetSales
 
-3. Sales by Top 10 Customers:
-   - A horizontal bar chart listing the top 10 customers ranked by their total sales.
-   - Example: Jordan Turner is the highest contributor with $11,484.
+One data source (sales budgets) were provided in Excel format and were connected in the data model in a later step of the process.
 
-4. Sales by Top 10 Products:
-   - A horizontal bar chart showing the top-performing products based on sales.
-   - Example: "Mountain-970" leads with $970,781.
+Power BI Dashboard 
 
-5. Sales by Customer City:
-   - A geographical map visualizing sales distribution across cities in Europe.
+The dashboards in this project are designed to provide key insights into sales performance, helping businesses track metrics and identify opportunities. Below is a high-level summary of each dashboard's purpose and functionality:
 
-6. Sales and Budget by Month:
-   - A line chart comparing sales and budget trends over the months of the selected year.
- Dashboard 2: Customer Details
+1.	Sales Overview Dashboard
+o	Focuses on overall sales performance compared to the budget.
+o	Highlights top-performing customers, products, and categories.
+o	Includes visuals for sales trends, geographical sales distribution, and monthly performance.
 
- Purpose:
-To provide customer-specific insights into sales performance over the year.
+2.	Customer Details Dashboard
+o	Provides detailed insights into customer-specific sales performance.
+o	Enables tracking of top customers, sales by location, and monthly sales trends.
+o	Offers drill-down capabilities for analyzing individual customer data.
 
- Key Features:
-1. Customer Sales Performance:
-   - Displays total sales ($16,351,550) and budget ($15,300,000) along with monthly variance trends.
+4.	Product Details Dashboard
+o	Focuses on product-specific performance, comparing sales to budget.
+o	Identifies top-selling products and categories.
+o	Includes trends and detailed tables for monthly product sales.
 
-2. Sales and Budget by Month:
-   - A line chart comparing monthly sales to the budget for the year.
 
-3. Sales by Customer City:
-   - A map visualizing sales contributions by geographic location.
-
-4. Sales by Top 10 Customers:
-   - A bar chart listing the top 10 customers and their sales contributions.
-
-5. Monthly Sales Table:
-   - A detailed table breaking down sales figures for each customer by month.
-   - Includes subtotals and grand totals for quick reference.
-
- Dashboard 3: Product Details
-
- Purpose:
-To analyze sales performance at the product and category level in detail.
-
- Key Features:
-1. Product Sales Performance:
-   - Displays the total sales ($16,351,550) compared to the budget ($15,300,000).
-
-2. Sales and Budget by Month:
-   - A line chart highlighting monthly trends in sales and budget.
-
-3. Sales by Customer City:
-   - A geographical map showing product sales distribution across cities.
-
-4. Sales by Top 10 Products:
-   - A bar chart listing the top 10 products based on sales figures.
-
-5. Monthly Product Sales Table:
-   - A detailed table providing sales figures for each product category by month.
-   - Includes subtotals and grand totals for easy reference.
 
