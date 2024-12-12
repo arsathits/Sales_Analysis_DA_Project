@@ -1,4 +1,5 @@
 Sales Analytics Dashboard 
+
 These dashboards help businesses monitor key performance metrics and gain actionable insights into their sales data. Below is an explanation of each dashboard and its functionality.
 
  Dashboard 1: Sales Overview
